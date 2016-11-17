@@ -1,0 +1,265 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2008 Nathaniel Johnston <nathaniel@nathanieljohnston.com> http://www.nathanieljohnston.com
+% (l) 2012 Arun I B <arunib@smail.iitm.ac.in> http://www.ee.iitm.ac.in/~ee10s026/
+%This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 2.5 License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.5/ or send a letter to Creative Commons, 543 Howard Street, 5th Floor, San Francisco, California, 94105, USA.
+
+\documentclass[a4paper,11pt]{article}%letterpaper
+\newlength{\outerbordwidth}
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\usepackage[svgnames]{xcolor}
+\usepackage{framed}
+\usepackage{times}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{multirow}
+\usepackage[utf8]{inputenc}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\title{Anand-CV}
+%-----------------------------------------------------------
+%Edit these values as you see fit
+
+\setlength{\outerbordwidth}{3pt}
+\definecolor{shadecolor}{gray}{0.95}  % Width of border outside of title bars
+%\definecolor{shadecolor}{gray}{0.75}  % Outer background color of title bars (0 = black, 1 = white) gray
+\definecolor{shadecolorB}{gray}{0.95}  % Inner background color of title bars gray
+
+\definecolor{name}{rgb}{0.36,0.54, 0.66}
+\definecolor{rest}{rgb}{0.52, 0.3,0.46}
+\definecolor{highl}{rgb}{0.56,0.13, 0.28}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\evensidemargin}{-0.15in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\oddsidemargin}{-0.15in}
+\setlength{\paperheight}{11in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\tabcolsep}{0in}
+\setlength{\textheight}{9.8in}
+\setlength{\textwidth}{7in}
+\setlength{\topmargin}{-0.2in}
+\setlength{\topskip}{0in}
+\setlength{\voffset}{0.1in}
+
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{\vspace{8pt}
+  \parbox{\textwidth}{\setlength{\FrameSep}{\outerbordwidth}
+    \begin{shaded}
+\setlength{\fboxsep}{0pt}\framebox[\textwidth][l]{\setlength{\fboxsep}{4pt}\fcolorbox{shadecolorB}{shadecolorB}{\textbf{\sffamily{\mbox{~}\makebox[6.762in][l]{\large #1} \vphantom{p\^{E}}}}}}
+    \end{shaded}
+  }\vspace{-5pt}
+}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\cftdotfill{\cftsecdotsep}\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+%-----------------------------------------------------------
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r} & \multirow{4}{*}{\includegraphics[scale=0.9]{pic}}\\
+%  & \\
+%-----------------------------------------------------------  
+\color{name}{\textsc{\textbf{\Huge Anand J }}}\vspace{4pt}&\\
+\color{rest}{janand.online@gmail.com} &\\
+\color{rest}{anandjagadeesh.github.io} \vspace{4pt}& \\
+
+\color{rest}{B. Tech. in Computer Science and Engineering} & \\
+\color{rest}{Federal Institute of Science And Technology (FISAT)\textsuperscript{\tiny \textregistered}, Angamaly} &  \\
+\end{tabular*}
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Academic Record}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+\begin{tabular}{| l | l | l | l |}
+ \hline
+ \hspace{2pt} 2013 - Present \hspace{2pt} & \hspace{2pt} B. Tech, CSE, M G University \hspace{2pt} & \hspace{2pt} Federal Institute of Science And Technology (FISAT) \hspace{2pt} & \hspace{2pt} 83.35\% \hspace{2pt} \\ & & \hspace{2pt} Angamaly, Kerala \hspace{2pt} & \\
+ \hline
+ \hspace{2pt} 2012 - 2013 & \hspace{2pt} XII (Science) AISSCE, CBSE \hspace{2pt} & \hspace{2pt} Sreyas Public School And Junior College\hspace{2pt}  & \hspace{2pt} 89.20\% \hspace{2pt}\\ 
+  &  & \hspace{2pt} Ponkunnam, Kottayam\hspace{2pt} & \\
+ \hline
+ \hspace{2pt} 2010 - 2011 \hspace{2pt} & \hspace{2pt} X, AISSE, CBSE \hspace{2pt} & \hspace{2pt} Sreyas Public School And Junior College \hspace{2pt} & \hspace{2pt} 95.00\% \hspace{2pt} \\ 
+  & & \hspace{2pt} Ponkunnam, Kottayam \hspace{2pt} & \\
+ \hline
+\end{tabular}
+\end{center}
+\justify
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Work Experience}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{l  l}
+\textbf{\color{highl}{Enbitree Innovations}} & \hspace{300pt}March 2013 - June 2014 \\
+\end{tabular}\\
+\textbf{Developer, Trainer and Finance Officer}. Played key role in software design and analysis projects of Enbitree Inovations and was in charge of the financial operations of the start-up for over a year. Designed websites and automation tools for individuals and firms. Provided training in programming languages to students as well as school teachers. The start-up ceased operations in July 2014 and was incubated at Startup Village, Kalamassery.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Academic Projects}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{l  l}
+\color{highl}{\textbf{Attila: A software vulnerability analysis tool for LINUX}} & \hspace{133pt}January 2016 - May 2016 \\
+\end{tabular}\\
+Platform: Python, PyQT, XML\\
+A tray based application for LINUX based systems that automates the vulnerability analysis of the system and gives a report of the vulnerabilities present in the system, so that the developer can take measures to avoid potential attacks. The entire project was designed and implemented in Python language and the interfaces were designed using PyQT.\\
+\vspace{4pt}
+\begin{tabular}{l  l}
+\color{highl}{\textbf{Bibilioteca: Library Management Software using C++}} & \hspace{130pt}January 2013 - March 2013 \\
+\end{tabular}\\
+Platform: C++ and C\\
+Software that track the books issued and returned in a library, along with the student details using files in C++. The project was developed as a part of the twelfth standard curriculum and was fully designed and developed from scratch.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Other Projects}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{l l l}
+\color{highl}{\textbf{e-Mithram Software}} \hspace{70pt} & \hspace{10pt} Platform: Python, C, C++, Java & \hspace{130pt}March 2016 \\
+\end{tabular}\\
+An Android based application that enables real-time translation of anything that is placed in-front of the camera. Very useful as it captures the manuscripts placed in front of the phone camera and searches it in real time and fetch the response. Member of the six member team that developed the software.\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\resheading{\color{name}{Other Projects}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{l l l}
+\color{highl}{\textbf{Electronic Score Board Renovation}} & \hspace{12pt} Platform: Python, Embedded C & \hspace{135pt}April 2014 \\
+\end{tabular}\\
+A 12 digit 7-Segment Display System, operated remotely by using radio transmission. Was a team member in the team which was assigned with the renovation work along with the then CHPC Research Team.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Technical Skills}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{\color{highl}{Programming Languages}}\\
+\vspace{2pt}
+\begin{tabular}{| l l l l l l l |}
+\hline
+\hspace{7pt} $\bullet$ C/C++ \hspace{32pt} & $\bullet$ Python & \hspace{32pt} $\bullet$ Java & \hspace{31pt} $\bullet$ PHP & \hspace{32pt} $\bullet$ Ruby & \hspace{32pt} $\bullet$ AWK and ZED & \hspace{32pt} $\bullet$ HTML 5 \hspace{31pt}\\
+\hline
+\end{tabular}\\
+\vspace{4pt}
+\textbf{\color{highl}{Platforms}}\\
+\vspace{2pt}
+\begin{tabular}{| l l l l l l l l |}
+\hline
+\hspace{4pt} $\bullet$ OpenCV \hspace{11pt} & $\bullet$ LaTeX & \hspace{11pt} $\bullet$ Open Hardwares & \hspace{11pt} $\bullet$ PyQT & \hspace{11pt} $\bullet$ Bootstrap & \hspace{11pt} $\bullet$ Google APIs & \hspace{11pt} $\bullet$ OpenGL \hspace{11pt} & $\bullet$ Oracle \hspace{4pt}\\
+\hline
+\end{tabular}\\
+\vspace{4pt}
+\textbf{\color{highl}{Operating Systems}}\\
+\begin{tabular}{ r | l }
+\textbf{Linux} \hspace{2pt} & \hspace{2pt}Debian, Ubuntu, Fedora, Manjaro, Arch Linux and Kali Linux \\
+\textbf{Windows}\hspace{5pt} & \hspace{2pt}Windows XP, Win7, Win8 and Win10\\
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Industrial Training}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{l l}
+Summer Internship at \color{highl}{\textbf{Veristics Networks Pvt. Ltd., Thiruvananthapuram}} & \hspace{117pt}July 2015 \\
+\end{tabular}\\
+Received ample front-end and back-end development training on consumer bulk SMS platform, \textbf{VINGS-SMS}. Platforms: Java, HTML, JSP, ASPX and NodeJS.\\
+\vspace{2pt}
+\begin{tabular}{l l}
+Internship at \color{highl}{\textbf{FISAT Summer School 2015}} & \hspace{255pt}August 2015 \\
+\end{tabular}\\
+Trained on various platforms like OpenCV, PyQT, Python, Ruby and Java as well as exposure to industry standards in software development through experts from the computing industry.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Academic Achievements}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\bullet$ Selected as one in eighteen students, globally, to receive IEEE Computer Society's \textbf{\color{highl}{Richard E. Merwin}} Scholarship, for academic achievements and volunteering in IEEE and IEEE Computer Society in April 2016.\\
+\vspace{4pt}
+$\bullet$ Winner of PTA Perseverence Award for Academic Excellence in 2014 from Federal Institute of Science And Technology in April 2014.\\
+\vspace{4pt}
+$\bullet$ Third rank holder at school-level for AISSCE 2013 with 89.2\% and winner of PTA Award for Academic Excellence from Sreyas Public School and Junior College, Ponkunnam in May 2013.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Other Achievements}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\bullet$ Awarded the "Best Student Volunteer 2016" of IEEE FISAT Student Branch in March 2016.\\
+\vspace{4pt}
+$\bullet$ Special mention by IEEE Computer Society 2016 President, Mr. Roger U. Fujii during the All-India Computer Society Students and Young Professionals Congress 2015 in December 2015 at NSIT, Delhi for contributions to IEEE CS Compute and IEEE Computer Society India Council Student Activities Committee.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Position of Responsibilities}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\textbf{\color{highl}{Regional Student Ambassador for Region 10 Asia-Pacific}}, IEEE Computer Society for the year 2016 and Mentor, IEEE Student Branch, Nehru College of Engineering, Palakkad.\\
+\vspace{2pt}
+\textbf{\color{highl}{Vice-Chairman}}, IEEE Computer Society India Council Student Activities Committee and team lead for activities conducted by the SAC. \\
+\vspace{2pt}
+\textbf{\color{highl}{Editor-in-Chief}} and \textbf{Team Lead} for IEEE Compute, IEEE CS ISAC newsletter and \textbf{\color{highl}{Team Lead}} for \textbf{Websites}.\\
+\vspace{2pt}
+\textbf{\color{highl}{Chairman}} of IEEE Computer Society Student Chapter, FISAT for two consecutive years and \textbf{\color{highl}{Treasurer}} of IEEE FISAT Student Branch.\\
+\vspace{2pt}
+\textbf{\color{highl}{Joint Secretary}} of Thyra, the CSE student association in 2015 and \textbf{\color{highl}{Treasurer}} of Thyra in 2014.\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Position of Responsibilities}}
+\textbf{\color{highl}{Treasurer and Executive Committee Member}} of FISAT Free Software Cell and \textbf{\color{highl}{Student Representative and Member}}, Placement Cell, FISAT\\
+\vspace{2pt}
+\textbf{\color{highl}{UG Student Member}} of Library Advisory Committee, FISAT.\\
+\vspace{2pt}
+\textbf{\color{highl}{Design Team Member}} of IEEE Educational Society Global Team and IEEE India Council.\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Professional Memberships}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{ l | l | l | l | l }
+\hspace{8pt} IEEE \hspace{8pt} & \hspace{8pt} IEEE Computer Society\hspace{8pt} & \hspace{8pt} FISAT Free Software Cell \hspace{8pt} & \hspace{8pt} Mozilla Developer Network \hspace{8pt} & \hspace{8pt} ACM \hspace{8pt}\\
+\end{tabular}\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Extra Curricular Activities}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+$\bullet$ Participated and secured third position among 26 teams in coding competition conducted by Department of CSE, Sahradaya College of Engineering in August 2016.\\
+\vspace{2pt}
+$\bullet$ Organizing committee member and technical head for {\color{highl}{Virtual Appearances Programme}} in July 2016, which attracted global attention to FISAT.\\
+\vspace{2pt}
+$\bullet$ Organizing committee member and event head for Canon Workshop during Nautilus 2k16, at FISAT.\\
+\vspace{2pt}
+$\bullet$ Volunteered as floor manager and workshops head for {\color{highl}{India Electronics Week hosted}} by EFY Group, January 2016.\\
+\vspace{2pt}
+$\bullet$ Problem setter and evaluator for {\color{highl}{IEEE Programming League 1.0}} in 2015 and {\color{highl}{IEEE Programming League 2.0}} in January 2016.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Hobbies and Interests}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{l | l | l | l | l}
+\hspace{30pt} Origami \hspace{20pt} & \hspace{20pt} Poetry \hspace{20pt} & \hspace{20pt} Web Design \hspace{20pt} & \hspace{20pt} Pencil Drawing \hspace{20pt} & \hspace{20pt} Graphics Design \hspace{20pt} 
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{Personal Information}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{ l | l }
+Address \hspace{5pt} & \hspace{5pt} Vrindavanam House, Elikkulam P.O., Elikkulam\\
+\hspace{5pt} & \hspace{5pt} Kottayam District, Kerala, PIN 686577\\
+\vspace{2pt}
+Gender\hspace{5pt} & \hspace{5pt} Male\\
+\vspace{2pt}
+Date of Birth\hspace{5pt} & \hspace{5pt} 13 July 1995\\
+\vspace{2pt}
+Languages Known\hspace{5pt} & \hspace{5pt} English, Hindi and Malayalam\\
+\vspace{2pt}
+\end{tabular}\\
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\resheading{\color{name}{References}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{tabular}{ l | l }
+\color{highl}{\textsc{\textbf{Mr. Unni Kartha G}}} & \hspace{19pt} \color{highl}{\textsc{\textbf{Dr. Prasad J C}}}\\
+unnikartha@fisat.ac.in & \hspace{19pt} cheeran.prasad@gmail.com\\
++91 9846387772 & \hspace{19pt} +91 9995419343\\
+Placement Training Officer & \hspace{19pt} Professor and Head, Department of CSE\\
+Federal Institute of Science And Technology(FISAT)\hspace{19pt} & \hspace{19pt} Federal Institute of Science And Technology(FISAT)\\
+\end{tabular}
+
+\end{document}
